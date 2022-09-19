@@ -23,5 +23,5 @@ class SearchPersonParams extends Equatable {
   const SearchPersonParams({required this.query});
 
   @override
-  List<Object> get props => [query];
+  List<Object> get props => [query]; 
 }
