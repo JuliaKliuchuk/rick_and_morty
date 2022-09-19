@@ -11,7 +11,6 @@ class PersonEntity extends Equatable {
   final LocationEntity location;
   final String image;
   final List<String> episode;
-  final String url;
   final DateTime created;
 
   const PersonEntity({
@@ -25,7 +24,6 @@ class PersonEntity extends Equatable {
     required this.location,
     required this.image,
     required this.episode,
-    required this.url,
     required this.created,
   });
 
@@ -41,7 +39,6 @@ class PersonEntity extends Equatable {
         location,
         image,
         episode,
-        url,
         created
       ];
 }
