@@ -1,16 +1,13 @@
-# rick_and_morty
+## Screenshots
 
-A new Flutter project.
+### Homepage
+<img src="https://user-images.githubusercontent.com/23060888/199205572-4f206910-d01b-4220-8f39-9d6a5f23d8d2.jpg" width="300">
 
-## Getting Started
+### Details
+<img src="https://user-images.githubusercontent.com/23060888/199205610-1d4b6dd9-c80c-4423-a36a-216cf932fd05.jpg" width="300">
 
-This project is a starting point for a Flutter application.
+### Search panel
+<img src="https://user-images.githubusercontent.com/23060888/199205620-1ca3a468-aee2-498b-93c6-106baf52d166.jpg" width="300">
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Search result
+<img src="https://user-images.githubusercontent.com/23060888/199205630-98e4325f-4c89-4ceb-af08-63fd91825315.jpg" width="300">
