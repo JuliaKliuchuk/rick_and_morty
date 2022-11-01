@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rick_and_morty/common/app_colors.dart';
@@ -20,6 +22,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    HttpOverrides.global = MyHttpOverrides();
     return MultiBlocProvider(
       providers: [
         BlocProvider<PersonListCubit>(
@@ -28,6 +31,7 @@ class MyApp extends StatelessWidget {
             create: (context) => sl<PersonSearchBloc>()),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: AppColors.mainBackground,
           // colorScheme: ColorScheme(background: AppColors.mainBackground),
@@ -35,5 +39,14 @@ class MyApp extends StatelessWidget {
         home: const HomePage(),
       ),
     );
+  }
+}
+
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
   }
 }
